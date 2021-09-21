@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
 
-    Thread.sleep(forTimeInterval: 0.2)
+//    Thread.sleep(forTimeInterval: 0.2)
+    print("splash screen started")
+    RunLoop.current.run(until: Date(timeIntervalSinceNow: 2.0))
+    print("splash screen ended")
+
     return true
   }
 
